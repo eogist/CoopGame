@@ -1,0 +1,26 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-CoopGame-7176.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Program Files\ue4\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGame.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGameGameModeBase.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SCharacter.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SExplosiveBarrel.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SHealthComponent.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SProjectileWeapon.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SWeapon.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGame.init.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGameGameModeBase.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SCharacter.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SExplosiveBarrel.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SHealthComponent.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SProjectileWeapon.gen.cpp.obj"
+"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SWeapon.gen.cpp.obj"
+"D:\Program Files\ue4\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\PCLaunch.rc.res"
+"D:\Program Files\ue4\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\ue4\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-CoopGame-7176.lib"
