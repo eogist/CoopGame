@@ -19,6 +19,14 @@ class AActor;
 
 #define CoopGame_Source_CoopGame_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnRep_Exploaded) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnRep_Exploaded(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execOnHealthChanged) \
 	{ \
 		P_GET_OBJECT(USHealthComponent,Z_Param_HealthComp); \
@@ -35,6 +43,14 @@ class AActor;
 
 
 #define CoopGame_Source_CoopGame_Public_SExplosiveBarrel_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_Exploaded) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnRep_Exploaded(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnHealthChanged) \
 	{ \
@@ -58,7 +74,8 @@ private: \
 public: \
 	DECLARE_CLASS(ASExplosiveBarrel, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/CoopGame"), NO_API) \
 	DECLARE_SERIALIZER(ASExplosiveBarrel) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
 #define CoopGame_Source_CoopGame_Public_SExplosiveBarrel_h_16_INCLASS \
@@ -68,7 +85,8 @@ private: \
 public: \
 	DECLARE_CLASS(ASExplosiveBarrel, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/CoopGame"), NO_API) \
 	DECLARE_SERIALIZER(ASExplosiveBarrel) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
 #define CoopGame_Source_CoopGame_Public_SExplosiveBarrel_h_16_STANDARD_CONSTRUCTORS \
@@ -99,6 +117,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASExplosiveBarrel); \
 	FORCEINLINE static uint32 __PPO__HealthComponent() { return STRUCT_OFFSET(ASExplosiveBarrel, HealthComponent); } \
 	FORCEINLINE static uint32 __PPO__MeshComponent() { return STRUCT_OFFSET(ASExplosiveBarrel, MeshComponent); } \
 	FORCEINLINE static uint32 __PPO__RadiaForce() { return STRUCT_OFFSET(ASExplosiveBarrel, RadiaForce); } \
+	FORCEINLINE static uint32 __PPO__bExploaded() { return STRUCT_OFFSET(ASExplosiveBarrel, bExploaded); } \
 	FORCEINLINE static uint32 __PPO__ExplosionImpulse() { return STRUCT_OFFSET(ASExplosiveBarrel, ExplosionImpulse); } \
 	FORCEINLINE static uint32 __PPO__ExplosionEffect() { return STRUCT_OFFSET(ASExplosiveBarrel, ExplosionEffect); } \
 	FORCEINLINE static uint32 __PPO__ExplosionMaterial() { return STRUCT_OFFSET(ASExplosiveBarrel, ExplosionMaterial); }

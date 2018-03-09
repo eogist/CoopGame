@@ -44,7 +44,7 @@ protected:
 	UFUNCTION()
 	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
-UPROPERTY(Replicated, EditDefaultsOnly, Category  = "Death")
+UPROPERTY(Replicated, BlueprintReadOnly, Category  = "Death")
 	bool bDie;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Weapon")

@@ -423,11 +423,13 @@
 		<ClCompile Include="..\..\Source\CoopGame\Private\SExplosiveBarrel.cpp" />
 		<ClCompile Include="..\..\Source\CoopGame\Private\SHealthComponent.cpp" />
 		<ClCompile Include="..\..\Source\CoopGame\Private\SProjectileWeapon.cpp" />
+		<ClCompile Include="..\..\Source\CoopGame\Private\STrackerBot.cpp" />
 		<ClCompile Include="..\..\Source\CoopGame\Private\SWeapon.cpp" />
 		<ClInclude Include="..\..\Source\CoopGame\Public\SCharacter.h" />
 		<ClInclude Include="..\..\Source\CoopGame\Public\SExplosiveBarrel.h" />
 		<ClInclude Include="..\..\Source\CoopGame\Public\SHealthComponent.h" />
 		<ClInclude Include="..\..\Source\CoopGame\Public\SProjectileWeapon.h" />
+		<ClInclude Include="..\..\Source\CoopGame\Public\STrackerBot.h" />
 		<ClInclude Include="..\..\Source\CoopGame\Public\SWeapon.h" />
 	</ItemGroup>
 	<PropertyGroup>

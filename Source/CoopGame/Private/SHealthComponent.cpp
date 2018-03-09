@@ -12,6 +12,7 @@ USHealthComponent::USHealthComponent()
 	// ...
 
 	SetIsReplicated(true);
+
 }
 
 

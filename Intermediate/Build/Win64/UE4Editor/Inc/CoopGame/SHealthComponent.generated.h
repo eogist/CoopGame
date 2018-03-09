@@ -40,7 +40,7 @@ static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScr
 }
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_RPC_WRAPPERS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execHandleTakeAnyDamage) \
 	{ \
@@ -56,7 +56,7 @@ static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScr
 	}
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execHandleTakeAnyDamage) \
 	{ \
@@ -72,7 +72,7 @@ static inline void FOnHealthChangedSignature_DelegateWrapper(const FMulticastScr
 	}
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_INCLASS_NO_PURE_DECLS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSHealthComponent(); \
 	friend COOPGAME_API class UClass* Z_Construct_UClass_USHealthComponent(); \
@@ -83,7 +83,7 @@ public: \
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_INCLASS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUSHealthComponent(); \
 	friend COOPGAME_API class UClass* Z_Construct_UClass_USHealthComponent(); \
@@ -94,7 +94,7 @@ public: \
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_STANDARD_CONSTRUCTORS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API USHealthComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USHealthComponent) \
@@ -107,7 +107,7 @@ private: \
 public:
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_ENHANCED_CONSTRUCTORS \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API USHealthComponent(USHealthComponent&&); \
@@ -118,30 +118,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(USHealthComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(USHealthComponent)
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Health() { return STRUCT_OFFSET(USHealthComponent, Health); } \
 	FORCEINLINE static uint32 __PPO__DefaultHealth() { return STRUCT_OFFSET(USHealthComponent, DefaultHealth); }
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_11_PROLOG
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_GENERATED_BODY_LEGACY \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_12_PROLOG
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_PRIVATE_PROPERTY_OFFSET \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_RPC_WRAPPERS \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_INCLASS \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_STANDARD_CONSTRUCTORS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_RPC_WRAPPERS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_INCLASS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_GENERATED_BODY \
+#define CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_PRIVATE_PROPERTY_OFFSET \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_INCLASS_NO_PURE_DECLS \
-	CoopGame_Source_CoopGame_Public_SHealthComponent_h_14_ENHANCED_CONSTRUCTORS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_INCLASS_NO_PURE_DECLS \
+	CoopGame_Source_CoopGame_Public_SHealthComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

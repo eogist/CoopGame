@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 			};
 #endif
 			auto NewProp_bDie_SetBit = [](void* Obj){ ((ASCharacter*)Obj)->bDie = 1; };
-			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDie = { UE4CodeGen_Private::EPropertyClass::Bool, "bDie", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010021, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ASCharacter), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_bDie_SetBit)>::SetBit, METADATA_PARAMS(NewProp_bDie_MetaData, ARRAY_COUNT(NewProp_bDie_MetaData)) };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bDie = { UE4CodeGen_Private::EPropertyClass::Bool, "bDie", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000000034, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ASCharacter), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_bDie_SetBit)>::SetBit, METADATA_PARAMS(NewProp_bDie_MetaData, ARRAY_COUNT(NewProp_bDie_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ZoomInterpSpeed,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ZoomedFov,
@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASCharacter, 864799626);
+	IMPLEMENT_CLASS(ASCharacter, 3924327467);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASCharacter(Z_Construct_UClass_ASCharacter, &ASCharacter::StaticClass, TEXT("/Script/CoopGame"), TEXT("ASCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
